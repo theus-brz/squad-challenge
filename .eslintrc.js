@@ -4,7 +4,12 @@ module.exports = {
     jest: true,
     browser: true
   },
-  extends: ["airbnb", "prettier", "prettier/react"],
+  extends: [
+    "airbnb",
+    "prettier",
+    "prettier/react",
+    "plugin:cypress/recommended",
+  ],
   globals: {
     Atomics: "readonly",
     SharedArrayBuffer: "readonly",
@@ -16,7 +21,15 @@ module.exports = {
     ecmaVersion: 2018,
     sourceType: "module"
   },
-  plugins: ["react", "jsx-a11y", "import", "react-hooks", "prettier", "import-helpers"],
+  plugins: [
+    "react",
+    "jsx-a11y",
+    "import",
+    "react-hooks",
+    "prettier",
+    "import-helpers",
+    "cypress",
+  ],
   rules: {
     "prettier/prettier": "error",
     "react/jsx-filename-extension": ["error", { extensions: [".js", ".jsx"] }],
@@ -39,5 +52,10 @@ module.exports = {
           alphabetize: { order: "asc", ignoreCase: true },
       },
     ],
+    "cypress/no-assigning-return-values": "error",
+    "cypress/no-unnecessary-waiting": "error",
+    "cypress/assertion-before-screenshot": "warn",
+    "cypress/no-force": "warn",
+    "cypress/no-async-tests": "error"
   },
 };

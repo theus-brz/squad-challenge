@@ -5,7 +5,7 @@ import { Container } from './MyTeamsStyles';
 function MyTeams() {
   return (
     <Container>
-      <h1>Helo World !</h1>
+      <h1 id="my-teams-title-1">Hello World !</h1>
     </Container>
   );
 }
