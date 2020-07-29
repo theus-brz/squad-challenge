@@ -4,7 +4,7 @@ import { Provider } from 'react-redux';
 import { mount } from 'enzyme';
 import { ThemeProvider } from 'styled-components';
 
-import App from '../App';
+import App from '../App/App';
 import Routes from '../routes';
 import GlobalStyle from '../styles/global';
 
