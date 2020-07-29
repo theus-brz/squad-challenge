@@ -1,12 +1,12 @@
 import React from 'react';
 
-import { Container } from './MyTeamsStyles';
+import { MyTeamsContainer } from './MyTeamsStyles';
 
 function MyTeams() {
   return (
-    <Container>
+    <MyTeamsContainer>
       <h1 id="my-teams-title-1">Hello World !</h1>
-    </Container>
+    </MyTeamsContainer>
   );
 }
 
