@@ -3,17 +3,17 @@ import { Provider } from 'react-redux';
 
 import { ThemeProvider } from 'styled-components';
 
-import Routes from '../routes';
 import '../config/reactotronConfig';
 import { store } from '../store';
 import GlobalStyle from '../styles/global';
 import light from '../styles/themes/light';
+import Main from './Main';
 
 function App() {
   return (
     <Provider store={store}>
       <ThemeProvider theme={light}>
-        <Routes />
+        <Main />
         <GlobalStyle />
       </ThemeProvider>
     </Provider>
